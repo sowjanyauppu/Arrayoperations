@@ -1,0 +1,19 @@
+//17. Write a JAVA program to print all natural numbers from 1 to n. - using while loop 
+import java.util.Scanner;
+public class NaturalNumbers {
+	private static Scanner sc;
+	public static void main(String[] args) 
+	{
+		int number, i = 1;
+		sc = new Scanner(System.in);
+		
+		System.out.print(" Please Enter any Number : ");
+		number = sc.nextInt();	
+		
+		while(i <= number)
+		{
+			System.out.print(i +"\t"); 
+			i++;
+		}	
+	}
+}

@@ -1,0 +1,63 @@
+12. Write a JAVA program to count total number of notes in given amount. 
+
+import java.util.Scanner; 
+
+  
+
+public class Main { 
+
+  
+
+    public static void main(String[] args) { 
+
+  
+
+        Scanner sc = new Scanner(System.in); 
+
+  
+
+        System.out.println("Enter amount: "); 
+
+        int amount = sc.nextInt(); 
+
+        int hCount=0; 
+
+        int thCount=0; 
+
+        int fhCount=0; 
+
+        if(amount%500==0) { 
+
+            fhCount=amount/500; 
+
+            amount=amount-fhCount*500; 
+
+            System.out.println("500 notes are:"+fhCount); 
+
+        }  
+
+        if(amount%200==0) { 
+
+            thCount=amount/200; 
+
+            amount=amount-thCount*200; 
+
+            System.out.println("200 notes are:"+thCount); 
+
+        }  
+
+        if(amount%100==0) { 
+
+            hCount=amount/100; 
+
+            amount=amount-hCount*100; 
+
+            System.out.println("100 notes are:"+hCount); 
+
+        }  
+
+  
+
+    } 
+
+} 
