@@ -1,0 +1,14 @@
+public class EvenNumber
+{
+	public static void main(String[] args) {
+	    
+	  int i=0;
+	  System.out.println("the even numbers from 1 to 100 are : ");
+	  while(i<100)
+	  {
+	      i=i+2;
+	      System.out.print(i+" ");
+	  }
+		
+	}
+}
